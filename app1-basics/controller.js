@@ -1,15 +1,7 @@
 angular
-    .module("simpleApp")
-    .controller('simpleCtrl', function ($scope, simpleService) {
-
-    
-    $scope.getThem = function () {
-       $scope.people = simpleService.getPeople()
-    } 
-
-    $scope.getThem();
+  .module('app')
+  .controller('control', function($scope, serve){
 
 
 
-
-    })//end of control
+  })//end of control

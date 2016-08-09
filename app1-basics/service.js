@@ -1,6 +1,6 @@
 angular
-    .module("simpleApp")
-    .service("simpleService", function(){
+    .module("app")
+    .service("serve", function(){
 
 
 var data = [
@@ -17,24 +17,14 @@ var data = [
     {
         name: "Mark",
         age: 31,
-        shirt: "purple" 
+        shirt: "purple"
     }
 ]
 
 
 this.getPeople = function () {
     return data;
-
 }
-
-
-
-
-
-
-
-
-
 
 
     }); //end of service

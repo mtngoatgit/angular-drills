@@ -1,1 +1,2 @@
-angular.module("simpleApp", []);
+angular
+  .module('app', []);
