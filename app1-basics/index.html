@@ -1,6 +1,19 @@
-<html>
-	<body>
-	
+<html ng-app="simpleApp">
+	<body ng-controller="simpleCtrl">
+
+
+
+<div>
+	<ul ng-repeat="person in people">
+		<li> {{ person.name }} </li>
+		<li> {{ person.age }} </li>
+		<li> {{ person.shirt }} </li>
+	</ul>
+
+</div>
+
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
