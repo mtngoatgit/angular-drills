@@ -1,19 +1,17 @@
 angular
-    .module('apiApp')
-    .controller('apiController', function($scope, apiService){
+  .module('myApp')
+  .controller('myCtrl', function($scope, mySrvc){
 
+      $scope.getData = function(){
+        mySrvc.getData().then(function(response){
+          $scope.smurfs = response
+        })
+      }
 
-
-$scope.getData = function(){
-    apiService.getData().then(function(response) {
-        $scope.images = response.data
-    })
-}
-
-$scope.getData();
-
+      $scope.getData();
 
 
 
 
-    })//end of controller
+
+  })

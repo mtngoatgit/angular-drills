@@ -1,17 +1,37 @@
-<html ng-app="apiApp">
-	<body ng-controller="apiController">
-		
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body ng-controller="myCtrl">
+
+<header class="header">
+		<h1>A real compelling website about smurfs</h1>
+</header>
+
+<div class="search-box">
+	<input type="text"  ng-model="search.$" placeholder="find any freakin thing:">
+</div>
 
 
-<ul ng-repeat="image in images">
-	<li> {{ image.name }} </li>
-</ul>
+
+<div class="homeOfSmurfs">
+	<ul ng-repeat="smurf in smurfs | filter:search">
+		<ul> {{smurf.id}} </ul>
+		<ul> {{smurf.created}} </ul>
+		<ul> {{smurf.name}} </ul>
+		<ul> {{smurf.img}} </ul>
+	</ul>
+</div>
 
 
 
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
-		<script src="app.js"></script>
-		<script src="controller.js"></script>
-		<script src="service.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+		<script type="text/javascript" src="controller.js"></script>
+		<script type="text/javascript" src="service.js"></script>
 	</body>
 </html>

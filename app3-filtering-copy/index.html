@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="filterApp">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body ng-controller="filterCtrl">
+
+
+
+
+<input type="text" class="search-box" ng-model="search.$" placeholder="search here by typing whatever the hell you want">
+
+		<div>
+			<ul ng-repeat="person in people | filter: search">
+				<li>name: {{ person.name }}</li>
+				<li>email: {{person.email}}</li>
+				<li>date employed: {{person.dateEmployed}}</li>
+				<li>phone: {{person.phone}}</li>
+			</ul>
+		</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script src="app.js"></script>
+	<script src="service.js"></script>
+	<script src="controller.js"></script>
+	</body>
+</html>

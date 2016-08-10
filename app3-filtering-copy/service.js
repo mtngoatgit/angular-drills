@@ -1,7 +1,6 @@
 angular
-	.module("arrayApp")
-	.service("arrayService", function(){
-
+	.module('filterApp')
+	.service('filterSvrc', function(){
 
 var myData = [
 	{"name": "Aileen Jacobs", "email": "convallis.ante.lectus@euneque.co.uk", "dateEmployed": "01/01/2016", "phone": "1-862-996-4921"},
@@ -106,10 +105,10 @@ var myData = [
 	{"name": "Odysseus Nash", "email": "purus@rutrum.co.uk", "dateEmployed": "01/08/2016", "phone": "722-7908"}
 ];
 
-
-this.getData = function () {
-	return myData
+this.getData = function() {
+	return myData;
 }
 
 
-})//end of service
+
+}); //end of service

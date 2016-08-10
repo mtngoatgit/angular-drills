@@ -1,20 +1,26 @@
+<!DOCTYPE html>
 <html ng-app="arrayApp">
 	<head>
-		<link rel="stylesheet" href="style.css"></link>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="https://fonts.googleapis.com/css?family=Lakki+Reddy" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body ng-controller="arrayController">
-	
 
-<ul class="row" ng-repeat="person in people">
-	<li class="personData"> {{ person.name }} </li>
-	<li class="personData"> {{ person.email }} </li>
-	<li class="personData"> {{ person.dateEmployed }} </li>
-</ul>
+		<div class="listOfThings" >
+				<ul ng-repeat="people in names">
+					<li>name: {{people.name}}</li>
+					<li>email: {{people.email}}</li>
+					<li>date employed: {{people.dateEmployed}}</li>
+					<li>phone: {{people.phone}}</li>
+				</ul>
 
+		</div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
-		<script src="app.js"></script>
-		<script src="controller.js"></script>
-		<script src="service.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script src="app.js"></script>
+	<script src="service.js"></script>
+	<script src="controller.js"></script>
 	</body>
 </html>
